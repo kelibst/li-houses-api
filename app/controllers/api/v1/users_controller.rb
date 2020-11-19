@@ -29,17 +29,26 @@ module Api
       # PATCH/PUT /users/1
       # PATCH/PUT /users/1.json
       def update
-        if @user.update(user_params)
-          render :show,  status: :ok
+        if(current__user.isAdmin  || current__user == @user)
+          if @user.update(user_params)
+            render :show,  status: :ok
+          else
+            render json: @user.errors, status: :unprocessable_entity
+          end
         else
-          render json: @user.errors, status: :unprocessable_entity
+          render json: "Sorry you are not allowed to perform this operation.", status: :unprocessable_entity
         end
+        
       end
 
       # DELETE /users/1
       # DELETE /users/1.json
       def destroy
-        @user.destroy
+        if current__user.isAdmin
+          @user.destroy
+        else
+          render json: "Sorry you are not allowed to perform this operation.", status: :unprocessable_entity
+        end
       end
 
   private
