@@ -1,25 +1,43 @@
-    # GET list of all hospital in json format
-    # GET  http://127.0.0.1:3000/api/v1/hospitals.json HTTP/1.1
+    # GET list of all users in json format
+    # GET  http://127.0.0.1:3000/api/v1/users HTTP/1.1
     # content-type: application/json
+   
+
 
     #GET single hospital
     # GET  http://127.0.0.1:3000/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
     # content-type: application/json
     
-    #create a new hospital
-    POST http://127.0.0.1:3000/auth/signup HTTP/1.1
-    content-type: application/json
+    #create a new user
+    # POST http://127.0.0.1:3000/api/v1/signup HTTP/1.1
+    # content-type: application/json
 
-    {
-    "user": {
-        "username": "test1",
-        "firstname": "tes",
-        "lastname": "st1",
-        "email": "test1@test.com",
-        "password": "test1@123",
-        "password_confirmation": "test1@123"
-    }
-    }
+    # {
+    # "user": {
+    #     "username": "test2",
+    #     "firstname": "tes",
+    #     "lastname": "st2",
+    #     "email": "test2@test.com",
+    #     "password": "test2@123",
+    #     "password_confirmation": "test2@123"
+    # }
+    # }
+
+    #create a new user session
+    # POST http://127.0.0.1:3000/api/v1/signin HTTP/1.1
+    # content-type: application/json
+
+    # {
+    # "auth": {
+    #         "email": "test@test.com",
+    #         "password": "test@123"
+    #         }
+    # }
+
+#     {
+#   "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjIwMjQsInN1YiI6MX0.t0TPGjH_7L8dtiQlFhYPG_ASsizU-infJ2YVXFph2sw"
+# }
+
 
     #delete a hospital
 

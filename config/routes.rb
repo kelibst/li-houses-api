@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  post 'user_token' => 'user_token#create'
-  resources :users
+  get 'homepage/home'
 
-  scope '/auth' do
-    post '/signin', to: 'user_token#create'
-    post '/signup', to: 'users#create'
+  namespace :api do
+    namespace :v1 do
+      resources :users
+      post '/signin', to: 'user_token#create'
+      post '/signup', to: 'users#create'
+    end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
