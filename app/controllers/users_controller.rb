@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
+  before_action :authenticate_user,except: [:create]
 
   # GET /users
   # GET /users.json
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      render :show, status: :created, location: @user
+      render :show, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     if @user.update(user_params)
-      render :show, status: :ok, location: @user
+      render :show, status: :ok
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -48,6 +49,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:username, :email, :password_digest, :firstname, :lastname, :isAdmin, :image)
+      params.require(:user).permit(:username, :email, :password, :password_confirmation, :firstname, :lastname, :isAdmin, :image)
     end
 end
