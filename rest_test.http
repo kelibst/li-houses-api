@@ -2,6 +2,7 @@
     # GET  http://127.0.0.1:3000/api/v1/users HTTP/1.1
     # content-type: application/json
    
+#    curl --location --request GET 'http://127.0.0.1:3000/api/v1/users/' \ --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjQyNjIsInN1YiI6MX0.HE0ym0CYWoN1zgOCpV3CS6KIuMTLLrHoE1UbQ25J62U'
 
 
     #GET single hospital
@@ -23,16 +24,16 @@
     # }
     # }
 
-    #create a new user session
-    # POST http://127.0.0.1:3000/api/v1/signin HTTP/1.1
-    # content-type: application/json
+    # create a new user session
+    POST http://127.0.0.1:3000/api/v1/signin HTTP/1.1
+    content-type: application/json
 
-    # {
-    # "auth": {
-    #         "email": "test@test.com",
-    #         "password": "test@123"
-    #         }
-    # }
+    {
+    "auth": {
+            "email": "test@test.com",
+            "password": "test@123"
+            }
+    }
 
 #     {
 #   "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjIwMjQsInN1YiI6MX0.t0TPGjH_7L8dtiQlFhYPG_ASsizU-infJ2YVXFph2sw"

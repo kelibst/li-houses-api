@@ -5,6 +5,7 @@ json.body do
     json.firstName user.firstname
     json.lastName user.lastname
     json.email user.email
+    json.isAdmin user.isAdmin
     json.image user.image
 end
 
