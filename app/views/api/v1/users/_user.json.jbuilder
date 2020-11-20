@@ -1,5 +1,5 @@
 json.id user.id
-json.name user.username
+json.username user.username
 
 json.body do
     json.firstName user.firstname
