@@ -59,7 +59,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def house_params
-        params.require(:house).permit(:name, :country, :address, :image, :slug, :region, :location, :user_id)
+        params.require(:house).permit(:name, :country, :address, :image, :slug, :status, :region, :location, :user_id)
       end
     end
   end

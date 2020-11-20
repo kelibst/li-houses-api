@@ -5,6 +5,7 @@ json.name house.name
 json.body do
     json.country house.country
     json.address house.address
+    json.status house.status
     json.region house.region
     json.location house.location
     json.user house.user_id
