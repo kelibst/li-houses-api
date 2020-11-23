@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users
       resources :houses
+      resources :favorites, only: [:destroy, :create]
       post '/signin', to: 'user_token#create'
       post '/signup', to: 'users#create'
     end
