@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
   has_many :users, dependent: :destroy
+  has_one :favorite, dependent: :destroy
   
   validates :username, uniqueness: true, presence: true, length: { in: 3..200 }
   validates :firstname, presence: true, length: { in: 2...200 }

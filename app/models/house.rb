@@ -1,5 +1,6 @@
 class House < ApplicationRecord
   belongs_to :user
+  has_many :favorites
   before_save :slugify
 
   validates :name, uniqueness: true, presence: true, length: { in: 3..200 }
