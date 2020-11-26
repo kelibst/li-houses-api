@@ -29,16 +29,24 @@ module Api
       # PATCH/PUT /users/1
       # PATCH/PUT /users/1.json
       def update
-        if(current__user.isAdmin  || current__user == @user)
+        if current__user.isAdmin || current__user == @user
           if @user.update(user_params)
             render :show,  status: :ok
           else
             render json: @user.errors, status: :unprocessable_entity
           end
         else
-          render json: "Sorry you are not allowed to perform this operation.", status: :unprocessable_entity
+          render json: 'Sorry you are not allowed to perform this operation.', status: :unprocessable_entity
         end
-        
+      end
+
+      def find_user
+        @user = User.find_by!(username: params[:username])
+        if @user
+          render :show,  status: :ok
+        else
+          render json: @user.errors, status: :unprocessable_entity
+        end
       end
 
       # DELETE /users/1
@@ -47,11 +55,11 @@ module Api
         if current__user.isAdmin
           @user.destroy
         else
-          render json: "Sorry you are not allowed to perform this operation.", status: :unprocessable_entity
+          render json: 'Sorry you are not allowed to perform this operation.', status: :unprocessable_entity
         end
       end
 
-  private
+      private
 
       # Use callbacks to share common setup or constraints between actions.
       def set_user

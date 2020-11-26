@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :users
       resources :houses
       resources :favorites, only: [:destroy, :create]
+      get '/user/:username', to: 'users#find_user'
       post '/signin', to: 'user_token#create'
       post '/signup', to: 'users#create'
     end
