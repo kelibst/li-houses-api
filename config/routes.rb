@@ -10,7 +10,7 @@ Rails.application.routes.draw do
      
       post '/signin', to: 'user_token#create'
       post '/signup', to: 'users#create' 
-      get '/user/:username', to: 'users#find_user'
+      get '/current/:username', to: 'users#find_user'
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
