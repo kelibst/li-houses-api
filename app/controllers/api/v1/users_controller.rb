@@ -36,7 +36,7 @@ module Api
             render json: @user.errors, status: :unprocessable_entity
           end
         else
-          render json: 'Sorry you are not allowed to perform this operation.', status: :unprocessable_entity
+          render json: 'Sorry you are not allowed to perform this operation!', status: :unprocessable_entity
         end
       end
 
