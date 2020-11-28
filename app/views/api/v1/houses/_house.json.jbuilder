@@ -8,6 +8,7 @@ json.body do
     json.status house.status
     json.region house.region
     json.location house.location
+    json.image house.image
     json.user house.user_id
 end
 
