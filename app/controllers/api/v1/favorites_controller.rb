@@ -3,7 +3,7 @@ module Api
     class FavoritesController < ApplicationController
       before_action :authenticate_user
 
-      def create 
+      def create
         favorite = user.favorites.new(favorites_params)
         if favorite.save
           render json: favorite, status: :created

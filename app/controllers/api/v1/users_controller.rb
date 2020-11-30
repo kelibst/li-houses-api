@@ -31,7 +31,7 @@ module Api
       def update
         if current__user.isAdmin || current__user == @user
           if @user.update(user_params)
-            render :show,  status: :ok
+            render :show, status: :ok
           else
             render json: @user.errors, status: :unprocessable_entity
           end
@@ -43,7 +43,7 @@ module Api
       def find_user
         @user = User.find_by!(username: params[:username])
         if @user
-          render :show,  status: :ok
+          render :show, status: :ok
         else
           render json: @user.errors, status: :unprocessable_entity
         end
@@ -68,7 +68,12 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def user_params
-        params.require(:user).permit(:username, :email, :password, :password_confirmation, :firstname, :lastname, :image)
+        params.require(:user).permit(:username,
+                                     :email, :password,
+                                     :password_confirmation,
+                                     :firstname,
+                                     :lastname,
+                                     :image)
       end
     end
   end
