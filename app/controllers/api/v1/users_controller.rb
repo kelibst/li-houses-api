@@ -49,7 +49,6 @@ module Api
         end
       end
 
-      # DELETE /users/1
       # DELETE /users/1.json
       def destroy
         if current__user.isAdmin
