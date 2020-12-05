@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get '/dashboard/:username', to: 'users#find_user', as: 'user_detail'
       resources :users
       resources :houses
+      resources :image_uploaders, only: [:create]
       resources :favorites, only: [:destroy, :create]
 
 
