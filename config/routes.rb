@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do 
       get '/dashboard/:username', to: 'users#find_user', as: 'user_detail'
+      get '/user/:id/favorites', to: 'users#user_favorites', as: 'user_favorites'
       resources :users
       resources :houses
       resources :image_uploaders, only: [:create]

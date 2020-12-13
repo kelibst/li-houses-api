@@ -1,7 +1,7 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      before_action :set_user, only: %i[show update destroy]
+      before_action :set_user, only: %i[show user_favorites update destroy]
       before_action :authenticate_user, except: [:create]
 
       # GET /users
@@ -12,8 +12,11 @@ module Api
 
       # GET /users/1
       # GET /users/1.json
-      def show
-        @user_fav = House.all.where(user_id: @user.id)
+      def show; end
+
+      def user_favorites
+        @houses = House.all
+        @user_fav = @user.user_favs(@user, @houses)
       end
 
       # POST /users
