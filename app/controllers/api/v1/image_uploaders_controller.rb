@@ -3,7 +3,7 @@ module Api
     class ImageUploadersController < ApplicationController
       def create
         image = Cloudinary::Uploader.upload(params[:image])
-        item = { image: image['url']}
+        item = { image: image['url'] }
         render json: item
       end
 

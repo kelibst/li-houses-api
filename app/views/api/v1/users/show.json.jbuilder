@@ -8,7 +8,7 @@ json.body do
   json.isAdmin @user.isAdmin
   json.image @user.image
 end
-json.favorites @user.favorites
+json.favorites @user_fav
 json.dates do
   json.created_at @user.created_at
   json.updated_at @user.updated_at

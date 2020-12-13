@@ -12,7 +12,9 @@ module Api
 
       # GET /users/1
       # GET /users/1.json
-      def show; end
+      def show
+        @user_fav = House.all.where(user_id: @user.id)
+      end
 
       # POST /users
       # POST /users.json
