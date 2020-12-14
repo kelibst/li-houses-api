@@ -12,9 +12,9 @@ class User < ApplicationRecord
 
   def user_favs(user, houses)
     favs = []
-    houses.each do |hse|
+    houses.each do |house|
       user.favorites.each do |fav|
-        favs.push(hse) if hse.id == fav.house_id
+        favs.push(house) if house.id == fav.house_id
       end
     end
     favs
