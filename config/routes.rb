@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'homepage/home'
 
   namespace :api do
     namespace :v1 do 
