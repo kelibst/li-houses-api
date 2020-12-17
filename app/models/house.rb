@@ -1,7 +1,8 @@
 class House < ApplicationRecord
   belongs_to :user
   before_save :slugify
-
+  has_many :favorites, dependent: :destroy
+  
   validates :name, uniqueness: true, presence: true, length: { in: 3..200 }
   validates_presence_of :country, :address, :region, :location
   validates :status, inclusion: { in: %w(available processing unavailable),

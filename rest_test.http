@@ -1,16 +1,16 @@
     # GET list of all users in json format
-    # GET  http://127.0.0.1:3000/api/v1/users HTTP/1.1
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/users HTTP/1.1
     # content-type: application/json
    
-#    curl --location --request GET 'http://127.0.0.1:3000/api/v1/users/' \ --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjQyNjIsInN1YiI6MX0.HE0ym0CYWoN1zgOCpV3CS6KIuMTLLrHoE1UbQ25J62U'
+#    curl --location --request GET 'http://https://lihouses-api.herokuapp.com/api/v1/users/' \ --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjQyNjIsInN1YiI6MX0.HE0ym0CYWoN1zgOCpV3CS6KIuMTLLrHoE1UbQ25J62U'
 
 
     #GET single hospital
-    # GET  http://127.0.0.1:3000/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
     # content-type: application/json
     
     #create a new user
-    # POST http://127.0.0.1:3000/api/v1/signup HTTP/1.1
+    # POST http://https://lihouses-api.herokuapp.com/api/v1/signup HTTP/1.1
     # content-type: application/json
 
     # {
@@ -25,7 +25,7 @@
     # }
 
     # create a new user session
-    # POST http://127.0.0.1:3000/api/v1/signin HTTP/1.1
+    # POST http://https://lihouses-api.herokuapp.com/api/v1/signin HTTP/1.1
     # content-type: application/json
 
     {
@@ -42,12 +42,12 @@
 
     #delete a hospital
 
-    # DELETE http://127.0.0.1:3000/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
+    # DELETE http://https://lihouses-api.herokuapp.com/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
     # content-type: application/json
 
     #update a hospital record
 
-    # PATCH http://127.0.0.1:3000/api/v1/hospitals/Kekeli-Hospital-Accra.json HTTP/1.1
+    # PATCH http://https://lihouses-api.herokuapp.com/api/v1/hospitals/Kekeli-Hospital-Accra.json HTTP/1.1
     # content-type: application/json
 
     # {
@@ -57,7 +57,7 @@
     # Review test
 
     # # GET list of all review in json format
-    # GET  http://127.0.0.1:3000/api/v1/reviews.json HTTP/1.1
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/reviews.json HTTP/1.1
     # content-type: application/json
 
 
@@ -74,12 +74,12 @@
     # }
 
     # GET single review
-    # GET  http://127.0.0.1:3000/api/v1/reviews/4.json HTTP/1.1
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/reviews/4.json HTTP/1.1
     # content-type: application/json
 
 
     #update a review
-    # PATCH http://127.0.0.1:3000/api/v1/reviews/1.json HTTP/1.1
+    # PATCH http://https://lihouses-api.herokuapp.com/api/v1/reviews/1.json HTTP/1.1
     # content-type: application/json
 
     # {
@@ -89,5 +89,5 @@
 
     # review delete test
 
-    # DELETE http://127.0.0.1:3000/api/v1/reviews/3.json HTTP/1.1
+    # DELETE http://https://lihouses-api.herokuapp.com/api/v1/reviews/3.json HTTP/1.1
     # content-type: application/json
