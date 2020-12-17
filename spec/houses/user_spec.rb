@@ -32,8 +32,4 @@ RSpec.describe User, type: :model do
     expect(user).not_to be_valid
     expect(user.errors.messages[:password]).to include("can't be blank")
   end
-
-  describe "Routes", :type => :routing do
-    it { should route(:get, '/api/v1/users').to(action: :index) }
-  end
 end
