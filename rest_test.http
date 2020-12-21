@@ -1,0 +1,93 @@
+    # GET list of all users in json format
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/users HTTP/1.1
+    # content-type: application/json
+   
+#    curl --location --request GET 'http://https://lihouses-api.herokuapp.com/api/v1/users/' \ --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjQyNjIsInN1YiI6MX0.HE0ym0CYWoN1zgOCpV3CS6KIuMTLLrHoE1UbQ25J62U'
+
+
+    #GET single hospital
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
+    # content-type: application/json
+    
+    #create a new user
+    # POST http://https://lihouses-api.herokuapp.com/api/v1/signup HTTP/1.1
+    # content-type: application/json
+
+    # {
+    # "user": {
+    #     "username": "test2",
+    #     "firstname": "tes",
+    #     "lastname": "st2",
+    #     "email": "test2@test.com",
+    #     "password": "test2@123",
+    #     "password_confirmation": "test2@123"
+    # }
+    # }
+
+    # create a new user session
+    # POST http://https://lihouses-api.herokuapp.com/api/v1/signin HTTP/1.1
+    # content-type: application/json
+
+    {
+    "auth": {
+            "email": "test@test.com",
+            "password": "test@123"
+            }
+    }
+
+#     {
+#   "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU4NjIwMjQsInN1YiI6MX0.t0TPGjH_7L8dtiQlFhYPG_ASsizU-infJ2YVXFph2sw"
+# }
+
+
+    #delete a hospital
+
+    # DELETE http://https://lihouses-api.herokuapp.com/api/v1/hospitals/kekeli-hospital-accra-new.json HTTP/1.1
+    # content-type: application/json
+
+    #update a hospital record
+
+    # PATCH http://https://lihouses-api.herokuapp.com/api/v1/hospitals/Kekeli-Hospital-Accra.json HTTP/1.1
+    # content-type: application/json
+
+    # {
+    #     "name": "Kekeli Hospital Accra new"
+    # }
+
+    # Review test
+
+    # # GET list of all review in json format
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/reviews.json HTTP/1.1
+    # content-type: application/json
+
+
+    # # create a new review
+    # POST https://hospitalreviews-api.herokuapp.com/api/v1/reviews.json HTTP/1.1
+    # content-type: application/json
+
+    # {
+    #     "reviewer_name":"Kekeli Dogbevi",
+    #     "title":"Great hospital",
+    #     "description":"some long description about this crazy review. blah blah blah!",
+    #     "score": 5,
+    #     "hospital_id": 2
+    # }
+
+    # GET single review
+    # GET  http://https://lihouses-api.herokuapp.com/api/v1/reviews/4.json HTTP/1.1
+    # content-type: application/json
+
+
+    #update a review
+    # PATCH http://https://lihouses-api.herokuapp.com/api/v1/reviews/1.json HTTP/1.1
+    # content-type: application/json
+
+    # {
+    #     "title": "awesome new title"
+    # }
+
+
+    # review delete test
+
+    # DELETE http://https://lihouses-api.herokuapp.com/api/v1/reviews/3.json HTTP/1.1
+    # content-type: application/json
