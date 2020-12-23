@@ -11,34 +11,30 @@
 
 ## Built With
 
-- Ruby v2.6.5
-- Ruby on Rails v5.2.4
+- Ruby v2.7.1
+- Ruby on Rails v6.0.3.4
 
 *Gems used:*
 
-- Devise (for user authentication)
-- Simple_form
-- Omniauth
-- Omniauth - Facebook
-- Faker
-- Will Paginate
+- Knock
+- email_validator
+- bcrypt
+- Jbuilder
 - Gems used for testing:
-  - Capybara
-  - Selenium webdriver
-  - Chromedriver helper
-  - Database cleaner
   - Rspec-rails
+  - Rubocop
+  - factory_bot_rails
   - Shoulda matchers
 
 - Rubocop
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](screenshot.gif)
 
 ## Video Presentation
 
-[![Watch the video](/app/assets/images/video.png)](
+[![Watch the video](./app/assets/images/video.png)](https://www.loom.com/share/77ad47b927854afab0ef9d348ca6c8e4)
 
 
 ## Getting Started
