@@ -1,6 +1,6 @@
- ## review_manager
+ ## lihouses-api
 
-> This project it was built on top of my knowledge of RoR and React.
+> This is the main Rails api for the lihouses-react project.
 <!-- > Idea and design by [Gregoire Veila](https://www.behance.net/gallery/14286087/Twitter-Redesign-of-UI-details) -->
 
 ![screenshot](screenshot.gif)
@@ -34,7 +34,7 @@
 
 ## Video Presentation
 
-[![Watch the video](./app/assets/images/video.png)](https://www.loom.com/share/77ad47b927854afab0ef9d348ca6c8e4)
+[Watch the video](https://www.youtube.com/watch?v=LvdpmAMrkuM&list=PLnjnS3DtrNe68eEDZh-K7DZjxKsJmV6Ct&index=1&ab_channel=KellyBooster)
 
 
 ## Getting Started
