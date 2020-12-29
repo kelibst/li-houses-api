@@ -6,7 +6,11 @@
 ![screenshot](screenshot.gif)
 
 ## What it does
-
+- Receives request to create new user with valid params
+- Updates user with valid params
+- Users can create a new house
+- Users can update their houses
+- Users can remove their houses
 
 
 ## Built With
