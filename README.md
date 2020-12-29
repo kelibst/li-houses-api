@@ -1,6 +1,6 @@
- ## review_manager
+ ## lihouses-api
 
-> This project it was built on top of my knowledge of RoR and React.
+> This is the main Rails api for the lihouses-react project.
 <!-- > Idea and design by [Gregoire Veila](https://www.behance.net/gallery/14286087/Twitter-Redesign-of-UI-details) -->
 
 ![screenshot](screenshot.gif)
@@ -15,34 +15,30 @@
 
 ## Built With
 
-- Ruby v2.6.5
-- Ruby on Rails v5.2.4
+- Ruby v2.7.1
+- Ruby on Rails v6.0.3.4
 
 *Gems used:*
 
-- Devise (for user authentication)
-- Simple_form
-- Omniauth
-- Omniauth - Facebook
-- Faker
-- Will Paginate
+- Knock
+- email_validator
+- bcrypt
+- Jbuilder
 - Gems used for testing:
-  - Capybara
-  - Selenium webdriver
-  - Chromedriver helper
-  - Database cleaner
   - Rspec-rails
+  - Rubocop
+  - factory_bot_rails
   - Shoulda matchers
 
 - Rubocop
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](screenshot.gif)
 
 ## Video Presentation
 
-[![Watch the video](/app/assets/images/video.png)](
+[Watch the video](https://www.youtube.com/watch?v=LvdpmAMrkuM&list=PLnjnS3DtrNe68eEDZh-K7DZjxKsJmV6Ct&index=1&ab_channel=KellyBooster)
 
 
 ## Getting Started
